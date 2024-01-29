@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Fox's Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4UfDEItQ99X5TOO3+V5YFak1/BBRX4ZuLjJ8nUxRWzjHtAHqzea2R+YXTV5bd+6C6VDh3eP6mLgVxW5uvr6Jew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(116, 10, 10); /* Set your desired background color */
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      padding: 50px;
+      color: white;
+    }
+
+    .live {
+      width: 100%; /* Adjust the width as needed */
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      background-color: #333; /* Set tab background color */
+      padding: 10px;
+    }
+
+    .tab-item {
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+      color: rgb(255, 0, 0);
+      cursor: pointer;
+    }
+
+    .tab-item i {
+      margin-right: 5px;
+    }
+
+    .content {
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello! It's galaxy fox here, welcome to my site</h1>
+    <h2>First Time making my site!</h2>
+    <p>I'm super excited to meet you guys.</p>
+    <div class="tenor-gif-embed" data-postid="16690916" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%">
+      <a href="https://tenor.com/view/love-anime-cute-smile-gif-16690916">Love Anime GIF</a> from <a href="https://tenor.com/search/love-gifs">Love GIFs</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  </header>
+
+  <img class="live" src="https://images.unsplash.com/photo-1615378536579-61c7d173e8a9?q=80&amp;w=1000&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Red and black galaxy with stars">
+
+  <div class="tab-container">
+    <div class="tab-item" onclick="showContent('intro')">
+      <i class="fas fa-info-circle"></i> Intro
+    </div>
+    <div class="tab-item" onclick="showContent('mid-life-confusion')">
+      <i class="fas fa-question-circle"></i> Mid-Life Confusion
+    </div>
+    <div class="tab-item" onclick="showContent('current')">
+      <i class="fas fa-heart"></i> Current
+    </div>
+  </div>
+
+  <div id="intro" class="content">
+    <img src="https://media1.tenor.com/m/hmRWm3dMkCsAAAAC/juvia-juvia-lockser.gif" alt="Juvia Lockser GIF">
+    <p>Lets start from the beginning shall we...personally I honestly couldn't find what career option,I wanted to go for...I went from health science,to phyical education and finally coding. </p>
+  </div>
+
+  <div id="mid-life-confusion" class="content" style="display: none;">
+    <img src="https://media1.tenor.com/m/UKA-YR4eeW0AAAAC/juvia-juvia-lockser.gif" alt="Juvia Lockser GIF">
+    <p>My mid-life-confusion lets start were I drifted off from my current path, I have decided to go indepth with my education each one had a positive and a negative towards it but mostly negative,until I came across coding relizing this is a whole different would, I can actually put my designing skill to use.</p>
+  </div>
+
+  <div id="current" class="content" style="display: none;">
+    <img src="https://media1.tenor.com/m/rrJW0cDtSdoAAAAC/juvia-lockser-blue-hair.gif" alt="Juvia Lockser GIF">
+    <p>This is what I am excited for, getting the oppertunity to build websites learn more coding, be more advance in my developing skills,to show you more on my developing skills.</p>
+  </div>
+
+  <!-- Include Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+
+  <script>
+    function showContent(tabName) {
+      // Hide all content divs
+      document.querySelectorAll('.content').forEach(function(content) {
+        content.style.display = 'none';
+      });
+
+      // Show the selected content
+      document.getElementById(tabName).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
